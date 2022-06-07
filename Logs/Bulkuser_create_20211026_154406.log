@@ -1,0 +1,64 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20211026154406
+Username: WS2K19-SRV01\Administrator
+RunAs User: WS2K19-SRV01\Administrator
+Configuration Name: 
+Machine: WS2K19-SRV01 (Microsoft Windows NT 10.0.17763.0)
+Host Application: C:\Windows\system32\WindowsPowerShell\v1.0\PowerShell_ISE.exe
+Process ID: 5516
+PSVersion: 5.1.17763.2183
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.17763.2183
+BuildVersion: 10.0.17763.2183
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\Administrator\Desktop\Bulk User create\Logs\Bulkuser_create_20211026_154406.log
+WARNING: A user account with username abc_jsmith already exist in Active Directory.
+WARNING: A user account with username abc_jsmith already exist in Active Directory.
+WARNING: A user account with username abc_jsmith already exist in Active Directory.
+WARNING: A user account with username abc_jsmith already exist in Active Directory.
+WARNING: A user account with username abc_brobertson already exist in Active Directory.
+WARNING: A user account with username abc_pcampbell already exist in Active Directory.
+WARNING: A user account with username abc_joneil already exist in Active Directory.
+WARNING: A user account with username abc_josullivan already exist in Active Directory.
+WARNING: A user account with username abc_mmacdonald already exist in Active Directory.
+WARNING: A user account with username abc_lscott already exist in Active Directory.
+WARNING: A user account with username abc_jreid already exist in Active Directory.
+WARNING: A user account with username abc_mmurray already exist in Active Directory.
+WARNING: A user account with username abc_staylor already exist in Active Directory.
+WARNING: A user account with username abc_aclark already exist in Active Directory.
+WARNING: A user account with username abc_fmitchell already exist in Active Directory.
+WARNING: A user account with username abc_cross already exist in Active Directory.
+WARNING: A user account with username abc_cwalker already exist in Active Directory.
+WARNING: A user account with username abc_cpaterson already exist in Active Directory.
+WARNING: A user account with username abc_dkerr already exist in Active Directory.
+WARNING: A user account with username abc_dduncan already exist in Active Directory.
+WARNING: A user account with username abc_dhunter already exist in Active Directory.
+WARNING: A user account with username abc_fbell already exist in Active Directory.
+WARNING: A user account with username abc_ggrant already exist in Active Directory.
+WARNING: A user account with username abc_ggibson already exist in Active Directory.
+WARNING: A user account with username abc_hgordon already exist in Active Directory.
+WARNING: A user account with username abc_iwallace already exist in Active Directory.
+WARNING: A user account with username abc_kreilly already exist in Active Directory.
+WARNING: A user account with username abc_lmcintyre already exist in Active Directory.
+WARNING: A user account with username abc_ochristie already exist in Active Directory.
+WARNING: A user account with username abc_omoore already exist in Active Directory.
+WARNING: A user account with username abc_qshaw already exist in Active Directory.
+WARNING: A user account with username abc_rboyle already exist in Active Directory.
+WARNING: A user account with username abc_smckay already exist in Active Directory.
+WARNING: A user account with username abc_tstevenson already exist in Active Directory.
+WARNING: A user account with username abc_uward already exist in Active Directory.
+WARNING: A user account with username abc_vsmith already exist in Active Directory.
+WARNING: A user account with username abc_wwatt already exist in Active Directory.
+WARNING: A user account with username abc_xmunro already exist in Active Directory.
+WARNING: A user account with username abc_yturtle already exist in Active Directory.
+WARNING: A user account with username abc_zhughes already exist in Active Directory.
+End
+**********************
+Windows PowerShell transcript end
+End time: 20211026154406
+**********************

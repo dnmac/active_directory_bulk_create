@@ -1,0 +1,42 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20211103114351
+Username: WS2K19-SRV01\Administrator
+RunAs User: WS2K19-SRV01\Administrator
+Configuration Name: 
+Machine: WS2K19-SRV01 (Microsoft Windows NT 10.0.17763.0)
+Host Application: C:\Windows\system32\WindowsPowerShell\v1.0\PowerShell_ISE.exe
+Process ID: 5548
+PSVersion: 5.1.17763.2183
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.17763.2183
+BuildVersion: 10.0.17763.2183
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\Administrator\Desktop\Bulk User create\Logs\Bulkuser_create_20211103_114350.log
+PS>TerminatingError(): "'.\new_users_errors2.xlsx' file not found"
+>> TerminatingError(): "'.\new_users_errors2.xlsx' file not found"
+'.\new_users_errors2.xlsx' file not found
+At C:\Program Files\WindowsPowerShell\Modules\ImportExcel\7.3.0\Public\Import-Excel.ps1:107 char:21
++                     throw "'$($Path)' file not found"
++                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: ('.\new_users_er... file not found:String) [], RuntimeException
+    + FullyQualifiedErrorId : '.\new_users_errors2.xlsx' file not found
+
+Transcript started, output file is C:\Users\Administrator\Desktop\Bulk User create\Logs\Bulkuser_create_20211103_114430.log
+PS C:\Users\Administrator> TerminatingError(): "'.\new_users_errors2.xlsx' file not found"
+>> TerminatingError(): "'.\new_users_errors2.xlsx' file not found"
+'.\new_users_errors2.xlsx' file not found
+At C:\Program Files\WindowsPowerShell\Modules\ImportExcel\7.3.0\Public\Import-Excel.ps1:107 char:21
++                     throw "'$($Path)' file not found"
++                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: ('.\new_users_er... file not found:String) [], RuntimeException
+    + FullyQualifiedErrorId : '.\new_users_errors2.xlsx' file not found
+
+**********************
+Windows PowerShell transcript end
+End time: 20211103114433
+**********************

@@ -1,0 +1,83 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20211027161526
+Username: WS2K19-SRV01\Administrator
+RunAs User: WS2K19-SRV01\Administrator
+Configuration Name: 
+Machine: WS2K19-SRV01 (Microsoft Windows NT 10.0.17763.0)
+Host Application: C:\Windows\system32\WindowsPowerShell\v1.0\PowerShell_ISE.exe
+Process ID: 5516
+PSVersion: 5.1.17763.2183
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.17763.2183
+BuildVersion: 10.0.17763.2183
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\Administrator\Desktop\Bulk User create\Logs\Bulkuser_create_20211027_161526.log
+User account abc_jsmith has been created!
+User account abc_jsmith has been added to Tech_Users
+WARNING: A user account with username abc_jsmith already exist in Active Directory.
+WARNING: A user account with username abc_jsmith already exist in Active Directory.
+WARNING: A user account with username abc_jsmith already exist in Active Directory.
+User account abc_brobertson has been created!
+User account abc_brobertson has been added to Tech_Admin
+User account abc_pcampbell has been created!
+User account abc_pcampbell has been added to Tech_Dev
+User account abc_joneil has been created!
+User account abc_joneil has been added to Tech_Users
+User account abc_josullivan has been created!
+User account abc_josullivan has been added to Tech_Admin
+User account abc_mmacdonald has been created!
+User account abc_mmacdonald has been added to Tech_Users
+User account abc_lscott has been created!
+User account abc_lscott has been added to Tech_Users
+User account abc_jreid has been created!
+User account abc_jreid has been added to Tech_Users
+User account abc_mmurray has been created!
+User account abc_mmurray has been added to Tech_Admin
+WARNING: A user account with username abc_staylor already exist in Active Directory.
+User account abc_aclark has been created!
+User account abc_aclark has been added to Tech_Dev
+User account abc_fmitchell has been created!
+User account abc_fmitchell has been added to Tech_Users
+User account abc_cross has been created!
+User account abc_cross has been added to Tech_Users
+User account abc_cwalker has been created!
+User account abc_cwalker has been added to Tech_Users
+WARNING: A user account with username abc_cpaterson already exist in Active Directory.
+WARNING: A user account with username abc_dkerr already exist in Active Directory.
+WARNING: A user account with username abc_dduncan already exist in Active Directory.
+WARNING: A user account with username abc_dhunter already exist in Active Directory.
+WARNING: A user account with username abc_fbell already exist in Active Directory.
+WARNING: A user account with username abc_ggrant already exist in Active Directory.
+WARNING: A user account with username abc_ggibson already exist in Active Directory.
+WARNING: A user account with username abc_hgordon already exist in Active Directory.
+User account abc_iwallace has been created!
+User account abc_iwallace has been added to Tech_Users
+User account abc_kreilly has been created!
+User account abc_kreilly has been added to Tech_Users
+User account abc_lmcintyre has been created!
+User account abc_lmcintyre has been added to Tech_Users
+User account abc_ochristie has been created!
+User account abc_ochristie has been added to Tech_Users
+User account abc_omoore has been created!
+User account abc_omoore has been added to Tech_Dev
+User account abc_qshaw has been created!
+User account abc_qshaw has been added to Tech_Users
+WARNING: A user account with username abc_rboyle already exist in Active Directory.
+WARNING: A user account with username abc_smckay already exist in Active Directory.
+WARNING: A user account with username abc_tstevenson already exist in Active Directory.
+WARNING: A user account with username abc_uward already exist in Active Directory.
+WARNING: A user account with username abc_vsmith already exist in Active Directory.
+WARNING: A user account with username abc_wwatt already exist in Active Directory.
+WARNING: A user account with username abc_xmunro already exist in Active Directory.
+WARNING: A user account with username abc_yturtle already exist in Active Directory.
+WARNING: A user account with username abc_zhughes already exist in Active Directory.
+End
+**********************
+Windows PowerShell transcript end
+End time: 20211027161527
+**********************

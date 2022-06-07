@@ -1,0 +1,87 @@
+########################
+## Bulk User Creation ##
+##   Version : v1.0   ##
+##       by Dan       ##
+########################
+
+# Import active directory module for running AD cmdlets
+Import-Module activedirectory
+
+$CurrentPath = Split-Path -Path $MyInvocation.MyCommand.Path -Parent
+$LogPath = Join-Path -Path $CurrentPath -ChildPath 'Logs'
+$LogRootName = (Split-Path -Path $MyInvocation.MyCommand.Path -Leaf) -replace '\.ps1'
+$TimeStamp = Get-Date -Format yyyyMMdd_HHmmss
+$LogFileName = '{0}_{1}.log' -f $LogRootName, $TimeStamp
+$LogFile = Join-Path -Path $LogPath -ChildPath $LogFileName
+
+$OutputPath = Join-Path -Path $CurrentPath -ChildPath 'Output'
+$OutputFileName = '{0}_{1}.log' -f "output", $TimeStamp
+$OutputFile = Join-Path -Path $OutputPath -ChildPath $OutputFileName
+
+Start-Transcript -Path $Logfile
+
+#Store the data from ADUsers.csv in the $ADUsers variable
+$ADUsers = Import-Excel .\new_users_errors2.xlsx
+#Loop through each row containing user details in the CSV file
+
+$Outputs =@()
+foreach ($User in $ADUsers)
+{
+#Read user data from each field in each row and assign the data to a variable as below
+
+$match = '\W',''
+$reg = "^[A-Z]'?[-a-zA-Z]+$"
+
+$Password = $User.password
+$Firstname = $User.firstname -replace $match
+$Lastname = $User.lastname
+$OU = $User.ou 
+$email = $User.email
+$Password = $User.Password
+$Group = $User.group
+
+
+$test = $name -match $Pattern
+if(-not $test){
+    $name = $name -replace $match
+}
+
+$SAM = "abc_"+($Firstname[0]+$Lastname -replace $match).ToLower()
+
+#Check to see if the user already exists in AD
+    if (Get-ADUser -F {SamAccountName -eq $SAM})
+    {
+        #If user does exist, give a warning
+        $UserExists = "A user account with username $SAM already exist in Active Directory."
+        Write-Warning $UserExists
+        $Outputs += "$UserExists `n"
+    }
+    else
+    {
+        #If User does not exist, create the account in the OU provided in .xlsx file
+
+        New-ADUser `
+        -SamAccountName $SAM `
+        -UserPrincipalName "$SAM@mylab.local" `
+        -Name "$Firstname $Lastname" `
+        -GivenName $Firstname `
+        -Surname $Lastname `
+        -Enabled $True `
+        -DisplayName "$Firstname $Lastname" `
+        -Path $OU `
+        -AccountPassword (convertto-securestring $Password -AsPlainText -Force) -ChangePasswordAtLogon $False
+
+        Write-Output "User account $SAM has been created!"
+
+        Add-ADGroupMember -Identity $Group -Members $SAM
+
+        Write-Output "User account $SAM has been added to $Group"
+        $Outputs += "$Firstname,$Lastname,$SAM,$Password,$OU,$Group`r"
+
+    }
+}
+
+$Outputs | out-file -filepath $OutputFile -append -width 200
+
+Write-Output "End"
+Stop-Transcript
